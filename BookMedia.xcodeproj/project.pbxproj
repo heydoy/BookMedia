@@ -17,6 +17,10 @@
 		A28559732887DCCE005A81AB /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28559722887DCCE005A81AB /* BookListCollectionViewCell.swift */; };
 		A28559752887DD3D005A81AB /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28559742887DD3D005A81AB /* MovieInfo.swift */; };
 		A28559782887E70C005A81AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A28559772887E70C005A81AB /* Kingfisher */; };
+		A2AA0B0628895C2800956C97 /* SearchHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA0B0528895C2800956C97 /* SearchHeaderCollectionReusableView.swift */; };
+		A2FF04DF288967CA003CD636 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF04DE288967CA003CD636 /* BookDetailViewController.swift */; };
+		A2FF04E128896B84003CD636 /* BookWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF04E028896B84003CD636 /* BookWebViewController.swift */; };
+		A2FF04E328896E8B003CD636 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF04E228896E8B003CD636 /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		A28559702887DCB4005A81AB /* BookListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewController.swift; sourceTree = "<group>"; };
 		A28559722887DCCE005A81AB /* BookListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A28559742887DD3D005A81AB /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		A2AA0B0528895C2800956C97 /* SearchHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		A2FF04DE288967CA003CD636 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		A2FF04E028896B84003CD636 /* BookWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWebViewController.swift; sourceTree = "<group>"; };
+		A2FF04E228896E8B003CD636 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +76,11 @@
 				A285595E2887DC30005A81AB /* SceneDelegate.swift */,
 				A28559602887DC30005A81AB /* ViewController.swift */,
 				A28559622887DC30005A81AB /* Main.storyboard */,
+				A2FF04E228896E8B003CD636 /* SearchResultViewController.swift */,
+				A2FF04E028896B84003CD636 /* BookWebViewController.swift */,
+				A2AA0B0528895C2800956C97 /* SearchHeaderCollectionReusableView.swift */,
 				A28559702887DCB4005A81AB /* BookListCollectionViewController.swift */,
+				A2FF04DE288967CA003CD636 /* BookDetailViewController.swift */,
 				A28559722887DCCE005A81AB /* BookListCollectionViewCell.swift */,
 				A28559742887DD3D005A81AB /* MovieInfo.swift */,
 				A28559652887DC31005A81AB /* Assets.xcassets */,
@@ -155,11 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AA0B0628895C2800956C97 /* SearchHeaderCollectionReusableView.swift in Sources */,
 				A28559612887DC30005A81AB /* ViewController.swift in Sources */,
+				A2FF04E328896E8B003CD636 /* SearchResultViewController.swift in Sources */,
 				A285595D2887DC30005A81AB /* AppDelegate.swift in Sources */,
 				A285595F2887DC30005A81AB /* SceneDelegate.swift in Sources */,
 				A28559732887DCCE005A81AB /* BookListCollectionViewCell.swift in Sources */,
+				A2FF04E128896B84003CD636 /* BookWebViewController.swift in Sources */,
 				A28559752887DD3D005A81AB /* MovieInfo.swift in Sources */,
+				A2FF04DF288967CA003CD636 /* BookDetailViewController.swift in Sources */,
 				A28559712887DCB4005A81AB /* BookListCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

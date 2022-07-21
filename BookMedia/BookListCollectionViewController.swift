@@ -77,6 +77,50 @@ class BookListCollectionViewController: UICollectionViewController {
         return cell
     }
     
-
-
+    // 셀 선택
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
+        
+        vc.movie = bookList.movie[indexPath.row]
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    // 네비게이션 컨트롤러가 있으면 헤더가 안 보이는 걸까..?
+    // 헤더
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        
+        switch kind {
+        case UICollectionView.elementKindSectionHeader :
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SearchHeaderCollectionReusableView.identifier, for: indexPath) as! SearchHeaderCollectionReusableView
+            
+            return header
+            
+            
+        default :
+            assert(false, "")
+        }
+    }
+    
+    // 헤더 사이즈
+    
+    
+    // MARK: - Action
+    @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: SearchResultViewController.identifier) as! SearchResultViewController
+        
+        let nav = UINavigationController(rootViewController: vc)
+        
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: true)
+    }
+    
 }
